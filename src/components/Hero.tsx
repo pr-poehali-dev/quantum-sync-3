@@ -33,7 +33,9 @@ export default function Hero() {
           Донат-магазин — привилегии, валюта и уникальные возможности для твоего приключения
         </p>
         <a
-          href="#donate"
+          href="https://t.me/maxmastergrief"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block mt-8 bg-yellow-400 text-black font-bold uppercase tracking-wide px-8 py-3 text-sm hover:bg-yellow-300 transition-colors duration-300"
         >
           Купить сейчас

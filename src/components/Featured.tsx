@@ -4,7 +4,7 @@ const privileges = [
     price: "10 ₽",
     color: "from-green-500 to-green-700",
     badge: "😈",
-    perks: ["Красная метка"],
+    perks: ["Красная метка", "Возможность получения специального комплекта"],
   },
   {
     name: "LION",

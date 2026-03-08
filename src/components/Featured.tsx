@@ -11,7 +11,7 @@ const privileges = [
     price: "249 ₽",
     color: "from-yellow-500 to-yellow-700",
     badge: "🦁",
-    perks: ["Всё из IMP", "/nick команда", "x2 опыта", "Личный варп"],
+    perks: ["Жёлтая метка", "Всё из IMP", "/nick команда", "x2 опыта", "Личный варп"],
   },
   {
     name: "ANGEL",

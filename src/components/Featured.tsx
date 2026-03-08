@@ -36,10 +36,10 @@ const privileges = [
   },
   {
     name: "VAMPIRE",
-    price: "999 ₽",
+    price: "100 ₽",
     color: "from-purple-600 to-purple-950",
     badge: "🧛",
-    perks: ["Всё из SCORPION", "Имя в топе сервера", "x5 опыта", "Закрытый Discord"],
+    perks: ["Золотая метка", "Привилегии: fast, fly, kick, mute, ban", "Специальный комплект"],
   },
 ];
 

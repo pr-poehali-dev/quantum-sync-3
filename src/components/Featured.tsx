@@ -1,31 +1,45 @@
 const privileges = [
   {
-    name: "VIP",
+    name: "IMP",
     price: "149 ₽",
     color: "from-green-500 to-green-700",
-    badge: "🌿",
+    badge: "😈",
     perks: ["Цветной ник", "Доступ к /fly", "x1.5 опыта", "Приоритет входа"],
   },
   {
-    name: "PREMIUM",
-    price: "299 ₽",
-    color: "from-blue-500 to-blue-700",
-    badge: "💎",
-    perks: ["Всё из VIP", "/nick команда", "x2 опыта", "Личный варп", "Частный чат"],
+    name: "LION",
+    price: "249 ₽",
+    color: "from-yellow-500 to-yellow-700",
+    badge: "🦁",
+    perks: ["Всё из IMP", "/nick команда", "x2 опыта", "Личный варп"],
   },
   {
-    name: "ELITE",
-    price: "499 ₽",
-    color: "from-purple-500 to-purple-800",
-    badge: "👑",
-    perks: ["Всё из PREMIUM", "Редкий скин ника", "x3 опыта", "Особые эффекты", "Уникальный плащ"],
+    name: "ANGEL",
+    price: "399 ₽",
+    color: "from-sky-400 to-blue-600",
+    badge: "😇",
+    perks: ["Всё из LION", "Особые эффекты", "x2.5 опыта", "Частный чат"],
   },
   {
-    name: "LEGEND",
+    name: "DEMON",
+    price: "599 ₽",
+    color: "from-red-500 to-red-800",
+    badge: "🔥",
+    perks: ["Всё из ANGEL", "Редкий скин ника", "x3 опыта", "Уникальный плащ"],
+  },
+  {
+    name: "SCORPION",
+    price: "799 ₽",
+    color: "from-orange-500 to-orange-800",
+    badge: "🦂",
+    perks: ["Всё из DEMON", "Личный остров", "x4 опыта", "Особые частицы"],
+  },
+  {
+    name: "VAMPIRE",
     price: "999 ₽",
-    color: "from-yellow-500 to-orange-600",
-    badge: "⚡",
-    perks: ["Всё из ELITE", "Имя в топе сервера", "x5 опыта", "Личный остров", "Закрытый Discord"],
+    color: "from-purple-600 to-purple-950",
+    badge: "🧛",
+    perks: ["Всё из SCORPION", "Имя в топе сервера", "x5 опыта", "Закрытый Discord"],
   },
 ];
 
@@ -35,7 +49,7 @@ export default function Featured() {
       <div className="max-w-6xl mx-auto">
         <p className="text-center text-sm uppercase tracking-widest text-neutral-400 mb-3">Выбери свой уровень</p>
         <h2 className="text-center text-4xl md:text-5xl font-bold text-white mb-14">Привилегии</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {privileges.map((p) => (
             <div
               key={p.name}

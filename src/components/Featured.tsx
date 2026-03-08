@@ -29,10 +29,10 @@ const privileges = [
   },
   {
     name: "SCORPION",
-    price: "799 ₽",
+    price: "60 ₽",
     color: "from-orange-500 to-orange-800",
     badge: "🦂",
-    perks: ["Всё из DEMON", "Личный остров", "x4 опыта", "Особые частицы"],
+    perks: ["Оранжевая метка", "Привилегии: fast, fly, kick, mute", "Специальный комплект"],
   },
   {
     name: "VAMPIRE",

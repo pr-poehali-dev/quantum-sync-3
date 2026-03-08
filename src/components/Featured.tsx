@@ -1,22 +1,72 @@
+const privileges = [
+  {
+    name: "VIP",
+    price: "149 ₽",
+    color: "from-green-500 to-green-700",
+    badge: "🌿",
+    perks: ["Цветной ник", "Доступ к /fly", "x1.5 опыта", "Приоритет входа"],
+  },
+  {
+    name: "PREMIUM",
+    price: "299 ₽",
+    color: "from-blue-500 to-blue-700",
+    badge: "💎",
+    perks: ["Всё из VIP", "/nick команда", "x2 опыта", "Личный варп", "Частный чат"],
+  },
+  {
+    name: "ELITE",
+    price: "499 ₽",
+    color: "from-purple-500 to-purple-800",
+    badge: "👑",
+    perks: ["Всё из PREMIUM", "Редкий скин ника", "x3 опыта", "Особые эффекты", "Уникальный плащ"],
+  },
+  {
+    name: "LEGEND",
+    price: "999 ₽",
+    color: "from-yellow-500 to-orange-600",
+    badge: "⚡",
+    perks: ["Всё из ELITE", "Имя в топе сервера", "x5 опыта", "Личный остров", "Закрытый Discord"],
+  },
+];
+
 export default function Featured() {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
-        <img
-          src="https://cdn.poehali.dev/projects/b113ca18-11ec-4030-b533-990b519e4fa9/files/91046b88-4d98-4ad5-894c-526af785b427.jpg"
-          alt="MultiCraft донат предметы"
-          className="w-full h-full object-cover"
-        />
+    <section className="bg-neutral-950 py-20 px-6" id="privileges">
+      <div className="max-w-6xl mx-auto">
+        <p className="text-center text-sm uppercase tracking-widest text-neutral-400 mb-3">Выбери свой уровень</p>
+        <h2 className="text-center text-4xl md:text-5xl font-bold text-white mb-14">Привилегии</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {privileges.map((p) => (
+            <div
+              key={p.name}
+              className="flex flex-col rounded-xl overflow-hidden border border-white/10 bg-neutral-900 hover:scale-105 transition-transform duration-300"
+            >
+              <div className={`bg-gradient-to-br ${p.color} p-6 text-center`}>
+                <div className="text-4xl mb-2">{p.badge}</div>
+                <h3 className="text-white font-bold text-2xl tracking-widest">{p.name}</h3>
+                <p className="text-white/80 text-xl font-semibold mt-1">{p.price}</p>
+              </div>
+              <div className="flex flex-col flex-1 p-5">
+                <ul className="space-y-2 flex-1 mb-6">
+                  {p.perks.map((perk) => (
+                    <li key={perk} className="text-neutral-300 text-sm flex items-center gap-2">
+                      <span className="text-green-400">✓</span> {perk}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="https://t.me/maxmasterMC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-white text-black font-bold uppercase tracking-wide text-xs py-3 hover:bg-yellow-400 transition-colors duration-200"
+                >
+                  Купить
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600" id="privileges">Привилегии и донат-валюта</h3>
-        <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Получи уникальные предметы, редкие привилегии и донат-монеты — всё, чтобы стать легендой на сервере MultiCraft.
-        </p>
-        <button id="donate" className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Выбрать привилегию
-        </button>
-      </div>
-    </div>
+    </section>
   );
 }

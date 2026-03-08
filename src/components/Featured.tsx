@@ -1,10 +1,10 @@
 const privileges = [
   {
     name: "IMP",
-    price: "149 ₽",
+    price: "10 ₽",
     color: "from-green-500 to-green-700",
     badge: "😈",
-    perks: ["Цветной ник", "Доступ к /fly", "x1.5 опыта", "Приоритет входа"],
+    perks: ["Красная метка"],
   },
   {
     name: "LION",

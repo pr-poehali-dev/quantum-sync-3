@@ -23,7 +23,7 @@ const privileges = [
   {
     name: "DEMON",
     price: "40 ₽",
-    color: "from-red-500 to-red-800",
+    color: "from-neutral-900 to-black",
     badge: "🔥",
     perks: ["Чёрная метка", "Привилегии: fast, fly, ban", "Специальный комплект"],
   },

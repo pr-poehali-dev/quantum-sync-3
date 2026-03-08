@@ -2,7 +2,7 @@ const privileges = [
   {
     name: "IMP",
     price: "10 ₽",
-    color: "from-green-500 to-green-700",
+    color: "from-red-500 to-red-700",
     badge: "😈",
     perks: ["Красная метка", "Возможность получения специального комплекта", "Привилегии: fly, fast"],
   },

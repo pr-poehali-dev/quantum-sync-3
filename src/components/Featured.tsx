@@ -15,10 +15,10 @@ const privileges = [
   },
   {
     name: "ANGEL",
-    price: "399 ₽",
+    price: "30 ₽",
     color: "from-sky-400 to-blue-600",
     badge: "😇",
-    perks: ["Всё из LION", "Особые эффекты", "x2.5 опыта", "Частный чат"],
+    perks: ["Белая метка", "Всё из LION", "Особые эффекты", "x2.5 опыта", "Частный чат", "Привилегии: fast, fly, mute", "Специальный комплект"],
   },
   {
     name: "DEMON",
